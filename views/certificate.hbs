@@ -7,19 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <style>
   .top-leftname {
   position: fixed;
   top: 300px;
-  left: 290px;
+  left: 260px;
   text-transform: uppercase;
   letter-spacing: 3px;
   }
   .top-leftcourse {
     position: absolute;
     top: 410px;
-    left: 290px;
+    left: 260px;
     text-transform: uppercase;
     letter-spacing: 5px;
     }
@@ -29,31 +28,18 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <section>
+  {{!-- <section> --}}
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" >
     <div class="carousel-inner" style="height: 600px;">
       <div class="carousel-item active p-5">
-        <img class="d-block w-100 img-responsive" src="Certificate of Completion - Horizontal Template  (1).png" alt="First slide" height="600px" width="900px" >
-        <div class="top-leftname"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Arun Sankar</h1></div>
-        <div class="top-leftcourse"><h4 style="font-family:monospace;">Python for everybody</h4></div>
+        <img class="d-block w-100 img-responsive" src="https://i.ibb.co/Kcgb9tN/Certificate-of-Completion-Horizontal-Template-1.png" alt="First slide" height="600px" width="900px" >
+        <div class="top-leftname"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">{{this.fname}} {{this.lname}}</h1></div>
+        <div class="top-leftcourse"><h4 style="font-family:monospace;">{{this.course}}</h4></div>
       </div>
     </div>
   </div>
-       <!-- <span style="font-size:50px; font-weight:bold">Certificate of Completion</span>
-       <br><br>
-       <span style="font-size:25px"><i>This is to certify that</i></span>
-       <br><br>
-       <span style="font-size:30px"><b>{{this.fname}} {{this.lname}}</b></span><br/><br/>
-       <span style="font-size:25px"><i>has completed the course {{this.course}}</i></span> <br/><br/>
-       {{!-- <span style="font-size:30px">course</span> <br/><br/> --}}
-       <span style="font-size:20px">with score of <b>$grade.getPoints()%</b></span> <br/><br/><br/><br/>
-       <span style="font-size:25px"><i>dated</i></span><br> -->
-     
+{{!-- </section> --}}
 
-</section>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
   </body>
 </html>

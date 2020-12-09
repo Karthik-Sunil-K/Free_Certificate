@@ -1,6 +1,4 @@
 
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,25 +8,48 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+  .top-leftname {
+  position: fixed;
+  top: 300px;
+  left: 290px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  }
+  .top-leftcourse {
+    position: absolute;
+    top: 410px;
+    left: 290px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    }
+
+  </style>
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <section class=>
-<div style="width:1200px; height:600px; padding:20px; text-align:center; border: 10px solid #787878">
-<div style="width:1150px; height:550px; padding:20px; text-align:center; border: 5px solid #787878">
-       <span style="font-size:50px; font-weight:bold">Certificate of Completion</span>
+    <section>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" >
+    <div class="carousel-inner" style="height: 600px;">
+      <div class="carousel-item active p-5">
+        <img class="d-block w-100 img-responsive" src="Certificate of Completion - Horizontal Template  (1).png" alt="First slide" height="600px" width="900px" >
+        <div class="top-leftname"><h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Arun Sankar</h1></div>
+        <div class="top-leftcourse"><h4 style="font-family:monospace;">Python for everybody</h4></div>
+      </div>
+    </div>
+  </div>
+       <!-- <span style="font-size:50px; font-weight:bold">Certificate of Completion</span>
        <br><br>
        <span style="font-size:25px"><i>This is to certify that</i></span>
        <br><br>
-       <span style="font-size:30px"><b>FullName()</b></span><br/><br/>
-       <span style="font-size:25px"><i>has completed the course</i></span> <br/><br/>
-       <span style="font-size:30px">course</span> <br/><br/>
+       <span style="font-size:30px"><b>{{this.fname}} {{this.lname}}</b></span><br/><br/>
+       <span style="font-size:25px"><i>has completed the course {{this.course}}</i></span> <br/><br/>
+       {{!-- <span style="font-size:30px">course</span> <br/><br/> --}}
        <span style="font-size:20px">with score of <b>$grade.getPoints()%</b></span> <br/><br/><br/><br/>
-       <span style="font-size:25px"><i>dated</i></span><br>
+       <span style="font-size:25px"><i>dated</i></span><br> -->
      
-</div>
-</div>
+
 </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
